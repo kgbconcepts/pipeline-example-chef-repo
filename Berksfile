@@ -8,7 +8,7 @@ group :community do
   cookbook 'emacs'
   cookbook 'git'
   cookbook 'chef-zero'
-  cookbook 'chef-dk'
+  cookbook 'chefdk'
 end
 
 cookbook 'pipeline', git: 'https://github.com/chef-solutions/pipeline.git'
