@@ -11,5 +11,5 @@ group :community do
   cookbook 'chefdk'
 end
 
-cookbook 'pipeline', git: 'https://github.com/chef-solutions/pipeline.git'
+cookbook 'pipeline', git: 'https://github.com/kgbconcepts/pipeline.git'
 cookbook 'gitlab', git: 'https://github.com/chef-solutions/gitlab.git'
