@@ -12,6 +12,4 @@ group :community do
   cookbook 'chefdk'
 end
 
-metadata
-
 cookbook 'pipeline', git: 'https://github.com/kgbconcepts/pipeline.git'
