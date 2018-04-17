@@ -1,15 +1,17 @@
-source "https://supermarket.getchef.com"
+source 'https://supermarket.chef.io'
 
 group :community do
-  cookbook 'jenkins'
-  cookbook 'java'
   cookbook 'apt'
   cookbook 'yum'
-  cookbook 'emacs'
   cookbook 'git'
+  cookbook 'java'
+  cookbook 'jenkins'
   cookbook 'chef-zero'
+  cookbook 'emacs'
+  cookbook 'sudo'
   cookbook 'chefdk'
 end
 
+metadata
+
 cookbook 'pipeline', git: 'https://github.com/kgbconcepts/pipeline.git'
-cookbook 'gitlab', git: 'https://github.com/chef-solutions/gitlab.git'

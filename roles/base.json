@@ -1,0 +1,13 @@
+{
+  "name": "base",
+  "default_attributes": {
+
+  },
+  "json_class": "Chef::Role",
+  "description": "Example Base Role",
+  "default_attributes": {
+  },
+  "run_list": [
+  ],
+  "chef_type": "role"
+}
