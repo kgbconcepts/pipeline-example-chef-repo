@@ -1,0 +1,11 @@
+{
+  "name": "qa",
+  "default_attributes": {
+
+  },
+  "json_class": "Chef::Environment",
+  "description": "The qa environment",
+  "cookbook_versions": {
+  },
+  "chef_type": "environment"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "staging",
+  "default_attributes": {
+
+  },
+  "json_class": "Chef::Environment",
+  "description": "The staging environment",
+  "cookbook_versions": {
+  },
+  "chef_type": "environment"
+}
