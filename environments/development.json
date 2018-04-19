@@ -1,11 +1,43 @@
 {
-  "name": "development",
-  "default_attributes": {
-
+    "name": "development",
+    "description": "This is an development environment defined as JSON",
+    "chef_type": "environment",
+    "json_class": "Chef::Environment",
+    "cookbook_versions": {
+    },
+    "default_attributes": {
+    "server_base": {
+      "deploy_full": "true",
+      "enable_ssm": "false",
+      "use_logging_agent": "false",
+      "logging_agent_type": "",
+      "enable_awscli": "true",
+      "mgmt_agent": "false",
+      "region": "us-east-1",
+      "domain": "test.local",
+      "fixers": {
+        "env1": "P",
+        "env_single": "prod",
+        "env_ads_ou_short": "Prod",
+        "env_ads_ou_long": "OU=Prod,OU=Servers,OU=AWS,DC=test,DC=local"
+      }
+    },
+    "unattended_upgrades": {
+      "upgrade_email": "devops@kgbconcepts.com"
+    },
+    "cpver": "4.1.3"
   },
-  "json_class": "Chef::Environment",
-  "description": "The development environment",
-  "cookbook_versions": {
-  },
-  "chef_type": "environment"
+  "override_attributes": {
+    "authorization": {
+      "sudo": {
+        "groups": ["admin", "test\\\\Prod_Admins", "Prod_admins", "prod_admins"],
+        "users": ["ubuntu", "nagios"],
+        "passwordless": "false"
+      }
+    },
+    "ntp": {
+      "servers": ["0.pool.ntp.org", "1.pool.ntp.org", "2.pool.ntp.org", "3.pool.ntp.org"],
+      "restrictions": ["10.0.0.0 mask 255.0.0.0 nomodify notrap"]
+    }
+  }
 }
