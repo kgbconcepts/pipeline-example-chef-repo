@@ -10,7 +10,6 @@ group :community do
   cookbook 'emacs'
   cookbook 'sudo'
   cookbook 'chefdk'
-  cookbook 'gradle'
 end
 
 cookbook 'pipeline', git: 'https://github.com/kgbconcepts/pipeline.git'
